@@ -50,9 +50,14 @@
   font-size: 0.78rem;
 }
 
-/* Larger logo mark in the header. */
+/* Full white wordmark logo in the header. */
 .md-header__button.md-logo img,
 .md-header__button.md-logo svg {
-  height: 1.7rem;
+  height: 2.1rem;
   width: auto;
+}
+
+/* The logo is the wordmark, so hide the redundant header title text. */
+.md-header__title {
+  display: none;
 }
