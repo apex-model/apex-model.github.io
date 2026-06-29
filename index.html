@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>APEX Model</title>
   <meta name="description" content="The APEX modeling ecosystem: the APEX process model, the QAPEX GIS interface, and the APEX Toolbox.">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="favicon-32.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <style>
     :root{
       --bg:#0f1b2d; --panel:#16263f; --ink:#eaf1fb; --muted:#9fb3cd;
@@ -43,12 +46,19 @@
       background:var(--soon); padding:3px 9px; border-radius:20px; align-self:flex-start}
     footer{text-align:center; color:var(--muted); margin-top:64px; font-size:.85rem}
     footer a{color:var(--accent)}
+    .logo-card{background:#fff; display:inline-block; padding:24px 32px; border-radius:16px;
+      box-shadow:0 10px 34px rgba(0,0,0,.38); margin-bottom:22px}
+    .logo-card img{display:block; width:min(440px,82vw); height:auto}
+    .visually-hidden{position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0)}
   </style>
 </head>
 <body>
   <div class="wrap">
     <header>
-      <h1>APEX Model</h1>
+      <h1 class="visually-hidden">APEX Model</h1>
+      <span class="logo-card">
+        <img src="assets/apex-logo.png" alt="APEX -- Agricultural Policy Environmental eXtender">
+      </span>
       <p class="tag">The Agricultural Policy Environmental eXtender ecosystem:
       the process model, its GIS interface, and the analysis toolbox. Pick a
       project below to get started or find its documentation.</p>
