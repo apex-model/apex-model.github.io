@@ -1,0 +1,58 @@
+/* APEX dark-green palette. */
+:root,
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: #14532d;
+  --md-primary-fg-color--light: #1b6b3a;
+  --md-primary-fg-color--dark: #0c3a1f;
+  --md-primary-bg-color: #ffffff;
+  --md-primary-bg-color--light: rgba(255, 255, 255, 0.7);
+
+  --md-accent-fg-color: #2e9e4f;
+  --md-accent-fg-color--transparent: rgba(46, 158, 79, 0.1);
+  --md-accent-bg-color: #ffffff;
+  --md-accent-bg-color--light: rgba(255, 255, 255, 0.7);
+}
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #14532d;
+  --md-primary-fg-color--light: #1b6b3a;
+  --md-primary-fg-color--dark: #0c3a1f;
+
+  --md-accent-fg-color: #6cc24a;
+  --md-accent-fg-color--transparent: rgba(108, 194, 74, 0.14);
+
+  /* Cooler green-tinted page background so the dark-green header reads as part of the page. */
+  --md-default-bg-color: #0f1a14;
+
+  /* Body links: light green, underlined for readability on the dark background. */
+  --md-typeset-a-color: #8fe06a;
+}
+
+[data-md-color-scheme="slate"] .md-typeset a {
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 1px;
+}
+
+[data-md-color-scheme="slate"] .md-typeset a:hover {
+  text-decoration-thickness: 2px;
+}
+
+/* Cap overall page width on very wide screens. */
+@media (min-width: 90em) {
+  .md-grid {
+    max-width: 1500px;
+  }
+}
+
+/* Slightly larger reading text. */
+.md-typeset {
+  font-size: 0.78rem;
+}
+
+/* Larger logo mark in the header. */
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+  height: 1.7rem;
+  width: auto;
+}
